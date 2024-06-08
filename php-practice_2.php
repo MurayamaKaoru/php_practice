@@ -120,7 +120,6 @@ echo $onemonthAgo->format('Y-m-d');
 $oldDate = new DateTime('1992-4-25');
 $nowDate = new DateTime();
 
-$diffDate = $oldDate->diff($nowDate);
-echo 'あの日から' .$diffDate->format('%a'). '日経過しました。';
+echo 'あの日から' .$oldDate->diff($nowDate)->format('%a'). '日経過しました。';
 
 ?>
