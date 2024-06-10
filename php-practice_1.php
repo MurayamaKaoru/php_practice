@@ -33,14 +33,14 @@ $message = ($age < 18)? '未成年です。' : '成人です。';
 echo $message
 
 // Q6 配列
-$prefecture = [
+$prefecture =[
   '東京都',
   '千葉県',
   '埼玉県',
   '茨城県',
   '神奈川県',
   '栃木県',
-  '群馬県',
+  '群馬県'
   ];
 
 echo $prefecture[2]. 'と' .$prefecture[3]. 'は関東地方の都道府県です。';

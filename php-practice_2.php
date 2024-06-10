@@ -117,9 +117,6 @@ $onemonthAgo = new DateTime('2021-02-02');
 echo $onemonthAgo->format('Y-m-d');
 
 // 今日の日付と1992年4月25日との日付の差を計算して、総日数を出力しましょう。
-$oldDate = new DateTime('1992-4-25');
-$nowDate = new DateTime();
-
-echo 'あの日から' .$oldDate->diff($nowDate)->format('%a'). '日経過しました。';
+echo 'あの日から' .new DateTime('1992-4-25')->diff(new DateTime())->format('%a'). '日経過しました。';
 
 ?>
